@@ -1,0 +1,39 @@
+//variables
+
+@import 'reset';
+
+$main-color : hsla(39,100%,50%,1);
+$main-font : Impact;
+
+//mixins
+@mixin main-text-style ($size, $bgcolor) {
+  color: $main-color;
+  font-family: $main-font;
+  font-size: $size;
+  background-color: $bgcolor;
+}
+
+.box2 p {
+  @include main-text-style(12px, blue);
+}
+
+.box2 h2 {
+  @include main-text-style(80px, red);
+}
+
+.box {
+	background-color: lightgrey;
+
+	p { 
+		@include main-text-style(12px,white);
+		padding: 15px;
+		}
+		img {
+			border: 3px solid black;
+		}
+		&:hover {
+			padding: 10px;
+		}
+	}	
+}
+

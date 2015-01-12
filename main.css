@@ -1,0 +1,31 @@
+/*
+Error: Invalid CSS after "	}": expected selector or at-rule, was "}"
+        on line 32 of main.scss
+
+27: 	}
+28: 
+29: 	}
+30: 
+31: 
+32: }
+
+Backtrace:
+main.scss:32
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	}\": expected selector or at-rule, was \"}\"\A         on line 32 of main.scss\A \A 27: 	}\A 28: \A 29: 	}\A 30: \A 31: \A 32: }"; }
